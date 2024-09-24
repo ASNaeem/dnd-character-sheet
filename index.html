@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Character Sheet Form</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="header-container">
+            <div class="logo-and-name">
+                <div class="logo">
+                    <!-- Insert your D&D logo here -->
+                    <img src="assets/images/drag.png" alt="Dungeons & Dragons Logo">
+                </div>
+                <div class="character-name">
+                    <input type="text" placeholder="Character Name" class="input-field">
+                    <!--- <p class="label">CHARACTER NAME</p> --->
+                </div>
+            </div>
+            <div class="fields-container">
+                <div class="field">
+                    <input type="text" placeholder="Class & Level" class="input-field">
+                    <!-- <p class="label">CLASS & LEVEL</p> -->
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Background" class="input-field">
+                    <!-- <p class="label">BACKGROUND</p> -->
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Player Name" class="input-field">
+                    <!-- <p class="label">PLAYER NAME</p> -->
+                </div>
+            </div>
+            <div class="fields-container">
+                <div class="field">
+                    <input type="text" placeholder="Race" class="input-field">
+                    <!-- <p class="label">RACE</p> -->
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Alignment" class="input-field">
+                    <!-- <p class="label">ALIGNMENT</p> -->
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Experience Points" class="input-field">
+                    <!-- <p class="label">EXPERIENCE POINTS</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="containers">
+            <div class="container-1">
+                <div class="ability-container">
+                    <h3 class="ability-name">STRENGTH</h3>
+                    <div class="ability-box">
+                        <div class="score">
+                            <input type="number" placeholder="score" class="score-value">
+                            <input type="number" placeholder="modifier" class="modifier">
+                        </div>
+                        <div class="sheet-item saving-throw">
+                            <input type="checkbox"><input type="number"> Saving Throw
+                            <input type="checkbox"><input type="number"> Athletics
+                        </div>
+                    </div>
+                    <h3 class="ability-name">DEXTERITY</h3>
+                    <div class="ability-box">
+                        <div class="score">
+                            <input type="number" placeholder="score" class="score-value">
+                            <input type="number" placeholder="modifier" class="modifier">
+                        </div>
+                        <div class="sheet-item saving-throw">
+                            <input type="checkbox"><input type="number"> Saving Throw
+                            <input type="checkbox"><input type="number"> Acrobatics
+                            <input type="checkbox"><input type="number"> Sleight of Hand
+                            <input type="checkbox"><input type="number"> Stealth
+                        </div>
+                    </div>
+                    <h3 class="ability-name">CONSTITUTION</h3>
+                    <div class="ability-box">
+                        <div class="score">
+                            <input type="number" placeholder="score" class="score-value">
+                            <input type="number" placeholder="modifier" class="modifier">
+                        </div>
+                        <div class="saving-throw">
+                            <input type="checkbox"><input type="number"> Saving Throw
+                        </div>
+                    </div>
+                    <h3 class="ability-name">INTELLIGENCE</h3>
+                    <div class="ability-box">
+                        <div class="score">
+                            <input type="number" placeholder="score" class="score-value">
+                            <input type="number" placeholder="modifier" class="modifier">
+                        </div>
+                        <div class="sheet-item saving-throw">
+                            <input type="checkbox"><input type="number"> Saving Throw
+                            <input type="checkbox"><input type="number"> Arcana
+                            <input type="checkbox"><input type="number"> History
+                            <input type="checkbox"><input type="number"> Investigation
+                            <input type="checkbox"><input type="number"> Nature
+                            <input type="checkbox"><input type="number"> Religion
+                        </div>
+                    </div>
+                    <h3 class="ability-name">WISDOM</h3>
+                    <div class="ability-box">
+                        <div class="score">
+                            <input type="number" placeholder="score" class="score-value">
+                            <input type="number" placeholder="modifier" class="modifier">
+                        </div>
+                        
+                        <div class="sheet-item saving-throw">
+                            <input type="checkbox"><input type="number"> Saving Throw
+                            <input type="checkbox"><input type="number"> Animal Handling
+                            <input type="checkbox"><input type="number"> Insight
+                            <input type="checkbox"><input type="number"> Medicine
+                            <input type="checkbox"><input type="number"> Perception
+                            <input type="checkbox"><input type="number"> Survival
+                        </div>
+                    </div>
+                    <h3 class="ability-name">CHARISMA</h3>
+                    <div class="ability-box">
+                        <div class="score">
+                            <input type="number" placeholder="score" class="score-value">
+                            <input type="number" placeholder="modifier" class="modifier">
+                        </div>
+                        <div class="sheet-item saving-throw">
+                            <input type="checkbox"><input type="number"> Saving Throw
+                            <input type="checkbox"><input type="number"> Deception
+                            <input type="checkbox"><input type="number"> Intimidation
+                            <input type="checkbox"><input type="number"> Performance
+                            <input type="checkbox"><input type="number"> Persuasion
+                        </div>
+                    </div>
+                    
+                    <!-- Continue for Constitution, Intelligence, Wisdom, and Charisma -->
+                    <div class="extra-fields">
+                        <div class="field">
+                            <input type="text" placeholder="+2" class="input-field">
+                            <p>PROFICIENCY BONUS</p>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="10" class="input-field">
+                            <p>PASSIVE PERCEPTION (WISODM)</p>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="10" class="input-field">
+                            <p>PASSIVE INVESTIGATION (INTELLIGENCE)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="currency">
+                    CP<input type="number" name="cp">
+                    SP<input type="number" name="sp">
+                    EP<input type="number" name="ep">
+                    GP<input type="number" name="gp">
+                    PP<input type="number" name="pp">
+                </div>
+            </div>
+            <div class="container-2">
+                <div class="character-sheet">
+                    <div class="sheet-item conditions">
+                        <h3>CONDITIONS</h3>
+                        <textarea id="condition-textarea"></textarea>
+                    </div>
+                    <div class="armor-class">
+                        <input class="armor-class-value">
+                    </div>
+                    <div class="sheet-item boons">
+                        <h3>BOONS</h3>
+                        <textarea id="boons-textarea"></textarea>
+                    </div>
+                    <div class="sheet-item initiative">
+                        <h3>INITIATIVE</h3>
+                        <input type="number" value="+3" />
+                    </div>
+                    <div class="hit-points">
+                        <div class="sheet-item speed">
+                            <h3>SPEED</h3>
+                            <input type="number" value="30" />                          
+                        </div>
+                        <div class="sheet-item hp-item">
+                            <h3>HIT POINTS</h3>
+                            <div class="sheet-item current-max-hp">
+                                <input type="number" id="currentHP" value="0" min="0" />
+                                <span>/</span>
+                                <input type="number" id="maxHP" value="0" min="0" />
+                            </div>
+                        </div>
+                        <div class="sheet-item hp-item">
+                            <h3>TEMP HP</h3>
+                            <input type="number" id="tempHP" value="0" min="0" />
+                        </div>
+                    </div>
+                    <div class="sheet-item hit-dice">
+                        <h3>HIT DICE</h3>
+                        <div>
+                            Current: <input type="text" id="currentHitDice" placeholder="1d8"/>
+                        </div>
+                        <div>
+                            Maximum: <input type="text" id="maxHitDice" placeholder="2d8"/>
+                        </div>
+                    </div>
+                    <div class="sheet-item death-saves">
+                        <h3>DEATH SAVES</h3>
+                        <div>Successes:</div>
+                        <div class="death-save-boxes" id="successBoxes">
+                            <div class="death-save-box"></div>
+                            <div class="death-save-box"></div>
+                            <div class="death-save-box"></div>
+                        </div>
+                        <div>Failures:</div>
+                        <div class="death-save-boxes" id="failureBoxes">
+                            <div class="death-save-box"></div>
+                            <div class="death-save-box"></div>
+                            <div class="death-save-box"></div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Attacks & Spellcasting</h2>
+                <div id="attack-section" class="attack-grid-container">
+                    <div class="attack-row">
+                        <div class="row">
+                            <div class="col">Attack Name</div>
+                            <div class="col">Attack Bonus</div>
+                            <div class="col">Damage/Type</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" placeholder="name" class  id="attack-name" name="attack-name[]">
+                        </div>
+                        <div class="col">
+                            <input type="number" placeholder="bonus" id="atk-bonus" name="atk-bonus[]">
+                        </div>
+                        <div class="col">
+                            <input type="text" placeholder="damage/type" id="damage-type" name="damage-type[]">
+                        </div>
+                        <button type="button" class="remove-attack">  -  </button>
+                    </div>
+                </div>
+                <div class="new-attack">
+                    <button type="button" id="add-attack">  +  </button>
+                </div>
+                <dev class="attack-spell">
+                <textarea class="attack-spell" cols="55" rows="50">
+                
+                </textarea>
+                <h3>CLASS RESOURCES, AMMO & CHARGES</h3>
+                <div class="unique-resources">
+                    <div id="rowsWrapper">
+                        <!-- Rows will go here -->
+                    </div>
+                    <div class="button-container">
+                        <button id="addButton">add</button>
+                    </div>
+                </div>
+                <!-- Equipment -->
+                <h2>Equipment</h2>
+                <div class="row">
+                    <div class="col">
+                        <label for="equipment">Equipment:</label>
+                        <textarea id="equipment" name="equipment"></textarea>
+                    </div>
+                    <div class="col">
+                        <label for="current-weight">Current Weight:</label>
+                        <input type="number" id="current-weight" name="current-weight">
+                    </div>
+                    <div class="col">
+                        <label for="max-weight">Max Weight:</label>
+                        <input type="number" id="max-weight" name="max-weight">
+                    </div>
+                </div>
+                </dev>
+            </div>
+            <div class="container-3">
+                <div class="sheet-item dm-bonuses">
+                    <div class="sheet-item inspiration">
+                        <input type="checkbox" id="inspiration" name="inspiration">
+                        <label for="inspiration">Inspiration</label>
+                    </div>
+                    <div class="sheet-item heroicdie">
+                        <input type="text" id="heroicdie" name="heroicdie">
+                        <label>Heroic Die</label>
+                    </div>
+                </div>
+                <h3>Personal Trait</h3>
+                <div class="sheet-item trait">
+                    <textarea placeholder="Your character's personal traits."></textarea>
+                </div>
+                <h3>Ideals</h3>
+                <div class="sheet-item ideals">
+                    <textarea placeholder="Your character's personal traits."></textarea>
+                </div>
+                <h3>Bonds</h3>
+                <div class="sheet-item bonds">
+                    <textarea placeholder="Your character's bonds."></textarea>
+                </div>
+                <h3>Flaws</h3>
+                <div class="sheet-item flaws">
+                    <textarea placeholder="Your character's flaws."></textarea>
+                </div>
+                <h3>Profeciencies & Languages</h3>
+                <div class="sheet-item prof-n-lang">
+                    <textarea placeholder="Language and proficiencies your characters have learned.."></textarea>
+                </div>
+                <h3>Features & Traits</h3>
+                <div class="sheet-item features">
+                    <textarea id="p1-fnt" placeholder="Features, Traits, and Feats you earned from your race, class or any other source."></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Submit Button -->
+        <div class="row">
+            <button type="submit">Save Character</button>
+        </div>
+    </form>
+</div>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+document.querySelectorAll('.death-save-box').forEach(box => {
+box.addEventListener('click', function() {
+this.classList.toggle('filled');
+});
+});
+</script>
+</body>
+</html>

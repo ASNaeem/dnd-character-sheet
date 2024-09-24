@@ -1,0 +1,576 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: space-between;
+    gap:10px;
+    max-width: auto;
+    margin: 0px 0px 0px 0px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.attack-grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 3fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    
+
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 5px;
+    font-size: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.remove-attack {
+    background-color: #FF4136;
+}
+
+button.remove-attack:hover {
+    background-color: #D32F2F;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border: 3px solid black;
+  position: relative;
+}
+
+.logo-and-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.character-name {
+  width: 70%;
+  position: relative;
+}
+
+.input-field {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: #f0f8ff;
+  border-radius: 5px;
+}
+
+.label {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #444;
+  letter-spacing: 1px;
+}
+
+.fields-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.field {
+  flex: 1;
+  margin-right: 10px;
+  position: relative;
+}
+
+.field:last-child {
+  margin-right: 0;
+}
+
+.field .input-field {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.field .label {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: #333;
+  text-transform: uppercase;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.ability-container {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  margin: 10px auto;
+  border: 2px solid #000;
+}
+
+.ability-box {
+  display: grid;
+  grid-template-columns: 80px 225px;
+  justify-content:space-between;
+  background-color: #eaeaea;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  gap: 5px;
+  border: 2px solid #333;
+  text-align: center;
+  position: relative;
+}
+
+.score {
+  display: grid;
+  grid-template-rows: 35% auto;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  justify-content:center;
+  justify-items: center;
+  justify-self: center;
+  gap: 5px;
+  padding: 5px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.score-value {
+  width: 50px;
+  height: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  align-self: center;
+
+}
+
+.modifier {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+   align-self: center;
+}
+
+
+.ability-name {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.saving-throw {
+  display: grid;
+  grid-template-columns:30px 40px 200px;
+  justify-items: left;
+  border: 2px solid #000;
+  margin-top: 10px;
+  padding: 5px;
+  gap: 5px;
+
+}
+
+
+.saving-throw input[type="number"]{
+  width:45px;
+  height: 20px;
+  font-size: 12px;
+  border: none;
+  margin-left: 0;
+}
+.saving-throw input[type="checkbox"]{
+  align-self: self-start;
+  height: 20px;
+  width: 20px;
+}
+input[type="number"] {
+  appearance: textfield;
+}
+
+.saving-throw label {
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: block;
+}
+.extra-fields {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.field {
+  text-align: center;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.field input {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.field p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+.character-sheet {
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;
+
+}
+.sheet-item {
+    width: 100%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+.sheet-item h3, .ability-name h3{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0 5px;
+    margin: 0;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.armor-class {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    box-shadow: 0 0 0 10px white, 0 0 0 12px #333;
+    position: relative;
+}
+.armor-class::before {
+    content: "ARMOR CLASS";
+    font-size: 10px;
+    position: absolute;
+    top: -15px;
+    width: 100%;
+    text-align: center;
+}
+.armor-class-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -20px; /* Adjust this value to center the number vertically */
+    width: 45px;
+}
+.conditions, .boons {
+    grid-row: span 2;
+}
+#condition-textarea{
+  height:145px;
+  width: 120px;
+}
+ #boons-textarea{
+  height:145px;
+  width: 120px;
+}
+
+.initiative, .speed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hit-points {
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.hp-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hit-dice {
+    grid-column: span 2;
+}
+.hit-dice input[type="text"]{
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+}
+.death-saves {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.death-save-boxes {
+    display: flex;
+    gap: 5px;
+}
+.death-save-box {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+.filled {
+    background-color: #333;
+}
+input[type="number"] {
+    width: 50px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+}
+.current-max-hp {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.container-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    width: 30%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+.container-3 h3{
+    font-size: 14px;
+    padding: 0 10px;
+    margin-left: 10px;
+    background-color:white;
+}
+.unique-resources {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.rrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.textField {
+  width: 200px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin: 0 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin: 10px 0;
+  position: relative;
+  background-color: white;
+  cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+  background-color: #333;
+}
+
+.checkbox-container input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-container::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: calc(100% - 40px); /* Adjusts based on the spacing between checkboxes */
+  background-color: #333;
+  top: 20px;
+  left: 9px; /* Align the line with the checkboxes */
+  z-index: -1;
+}
+
+.removeButton {
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+textarea{
+  width: 100%;
+}
+#p1-fnt{
+  height: 100vh;;
+  position: relative;
+}
+.dm-bonuses{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 15px;
+  justify-items: center;
+}
+.dm-bonuses input[type="checkbox"]{
+  justify-self: center;
+  width: 25px;
+  height: 25px;
+}
+#heroicdie{
+  justify-self: center;
+  width: 60px;
+}
+.inspiration, .heroicdie{
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  justify-items:center;
+  justify-self:center;
+  align-items:center;
+}
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none; /* Optional, can be useful to keep for accessibility */
+}
